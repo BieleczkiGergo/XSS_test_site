@@ -1,0 +1,44 @@
+*{
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+
+}
+
+body{
+  background-color: #1a1aff;
+
+}
+
+h1{
+  display: block;
+  margin: auto;
+  text-align: center;
+  
+
+}
+div.container{
+  margin: auto;
+  width: 100vw;
+
+}
+
+section{
+  margin-top: 10px;
+
+}
+
+input{
+  background-color: #1a1aff;
+  border: 2px solid white;
+
+}
+
+@media screen and (min-width: 900px){
+  div.container{
+    width: 70vw;
+  
+  }
+
+}
