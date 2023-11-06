@@ -1,56 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>XSS test site</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="DOMPurify/src/purify.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="DOMPurify/src/purify.js"></script> -->
+    <script type="text/javascript" src="script.js" defer> </script>
 
   </head>
   <body>
   <h1>XSS test site</h1>
-  <div class="container">
-    <section>
-      <h2>No purification</h2>
-      <input type="text" name="no_purify" value="">
-      <p id="no_purify"></p>
-      <hr>
-
-    </section>
-
-    <section>
-      <h2>Code is put inside a comment</h2>
-      <p>Like this: &lt;!-- code --&gt;</p>
-      <input type="text" name="comment" value="">
-      <p id="comment"></p>
-      <hr>
-
-    </section>
-
-    <section>
-      <h2>The caracters: () are cut out from the string</h2>
-      <input type="text" name="parentheses" value="" onchange=handle_parentheses()>
-      <p id="parentheses"></p>
-      <hr>
-
-    </section>
-
-    <!--
-
-    <section>
-      <h2>Using DOMPurify</h2>
-      <input type="text" name="DOMP" value="" onchange=handle_DOMP>
-      <p id="DOMP"></p>
-      <hr>
-    
-    </section>
-    
-    -->
+  <hr />
+  <div class="container" id="container">
 
   </div>
   </body>
 </html>
+
